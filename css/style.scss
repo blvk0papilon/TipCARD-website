@@ -1,0 +1,552 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;  
+}
+ul, li, ol {
+    list-style-type: none;
+    cursor: pointer; 
+}
+a {
+    text-decoration: none;
+    cursor: pointer; 
+    outline: none; 
+    color:#18191F; 
+}
+// Header 
+.header-container {   
+    max-width:1200px; 
+    padding: 10px; 
+    text-align: center; 
+    margin: 0 auto; 
+    .top { 
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;  
+    } 
+    
+}
+.logo img {
+    width: 100%; 
+} 
+.menu ul {
+    display: flex; 
+    .menu-link  { 
+        margin-right: 15px; 
+        color: #18191F; 
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        a:hover {
+            color: red; 
+        }
+    }
+}
+button {
+    background: #7D85DD;
+    border-radius: 2px;   
+    padding:13px; 
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    outline: none;  
+    border: none; 
+    cursor: pointer; 
+    color: #FFFFFF;
+    transition: .5s ease; 
+    &:hover {
+        opacity: .85; 
+        background: -moz-linear-gradient(left, #BF99C9 0%, #8080B3 100%, #B8B1C5 100%);
+        background: -webkit-linear-gradient(left, #BF99C9 0%, #8080B3 100%, #B8B1C5 100%);
+        background: linear-gradient(to right, #BF99C9 0%, #8080B3 100%, #B8B1C5 100%);
+    }
+    &:focus {
+        outline: none;
+    }
+}
+//Main 
+.main-container {
+    display: flex; 
+    margin: 0 auto; 
+    justify-content: space-between; 
+    align-items: center;  
+    padding: 20px;  
+    max-width:1450px; 
+}
+.main-text {
+    padding-left: 30px;    
+    .title { 
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 72px;
+        line-height: 98px;
+    }
+    .subtitle {
+        font-family: 'Montserrat';
+        font-size: 18px;
+        line-height: 32px;
+        margin: 20px 0px;
+    }
+}   
+
+//How it works 
+.how {
+    margin-top: 80px;   
+    .how-container {
+        text-align: center;  
+        padding: 30px;  
+    }
+}
+h2 {
+    padding: 0px 20px; 
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    max-width: 700px; 
+    margin: 0 auto;  
+    text-align: center;  
+}
+h3 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    padding: 15px 0px; 
+    line-height: 32px; 
+}
+.columns {
+    display: flex;  
+    justify-content: center; 
+    align-items: center;  
+    .column {
+        padding: 20px 30px;
+        max-width: 400px; 
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 26px;
+        .columns img {
+            height: 147px;
+            width: 147px;
+        }
+    } 
+}
+// Where can you use our service? 
+.where-container {
+    margin: 0 auto;
+    padding: 50px 20px; 
+
+}
+.where-content {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+}
+.where-text {
+    padding: 0px 50px;  
+    p {
+        padding-bottom: 20px;  
+        max-width:420px; 
+        font-family: 'Montserrat';
+        font-size: 16px;  
+        line-height: 30px;
+    }
+}
+// Reviews
+
+.reviews-container {
+    margin: 0 auto;
+    padding: 80px 20px; 
+    text-align: center; 
+}
+
+.single-item {
+    display: flex; 
+    padding: 15px; 
+    margin: 0 auto;   
+    max-width: 700px; 
+}
+.slider-text {
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    p, a{
+        font-family: 'Montserrat';
+        font-size: 16px; 
+        line-height: 26px;
+    }
+    a {
+        text-decoration: underline; 
+        font-weight: 600; 
+    }
+}
+.stars img {
+    padding: 20px 0px; 
+    display: inline-flex;
+    justify-content: flex-end;   
+}
+// Asks
+.asks-container {
+    margin: 0 auto;     
+} 
+.asks-content{
+    display: flex; 
+    justify-content: center;  
+    margin: 0 auto; 
+    align-items: center;    
+    margin: 50px;   
+} 
+.asks-link  {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    border: 2px solid #7D85DD; 
+    margin: 20px;  
+    padding: 25px;  
+    border-radius: 10px;  
+} 
+.asks-link i {
+    padding: 20px;  
+    color: #7D85DD; 
+    transition: 0.3s; 
+}
+.submenu {
+    display: none; 
+}
+.deg {
+    transform: rotate(90deg);
+}
+.submenu-link {
+    padding: 30px 0px; 
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 26px;
+}
+//Applicatoon
+.app {
+    background-color: #E5E7F8; 
+}
+.app-content {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    padding: 30px; 
+}
+.app-text {
+    padding: 0px 50px; 
+    h2 {
+        max-width: 560px; 
+        text-align: left;  
+    }
+    p {
+        padding: 30px; 
+        font-family: 'Montserrat';
+        font-size: 20px;
+        line-height: 26px;
+    } 
+    .app-text-app img {
+        padding: 0px 10px;  
+    }
+}
+//Card 
+.card-container{
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    background: white; 
+    padding: 15px; 
+    .card-container-link img {
+        margin: 0px 10px; 
+        box-shadow: 2px 0px 4px rgba(129, 129, 129, 0.25), 0px 4px 4px rgba(160, 160, 160, 0.25);
+        padding:0px 50px; 
+    } 
+}
+// Send a phone number 
+.sendnum {
+    margin-bottom: 130px; 
+    width: 100%; 
+} 
+.sednum-container {
+    margin: 0 auto;
+    display: flex;
+    width: 70%; 
+    background: #7D85DD; 
+    background-position: center; 
+    border: 1px solid #7D85DD;
+    box-sizing: border-box;
+    border-radius: 8px;
+    justify-content: center; 
+    align-items: center; 
+}
+.sendnum-content {
+    padding: 40px 40px; 
+    p {
+        max-width:600px; 
+        font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 20px; 
+    line-height: 32px;
+    color: white;
+    padding: 20px 0px; 
+    }  
+}
+form {
+    display: flex; 
+    input {
+        padding-right: 60px; 
+        padding-left: 20px; 
+        outline: none; 
+        display: block;
+        border-radius: 5px; 
+        border: none; 
+    }
+    button {
+        border-radius: 5px; 
+        background-color: black;
+        color: white; 
+        font-family: 'Montserrat';
+        font-weight: bold;
+        display: inline-block; 
+        font-size: 14px;
+        line-height: 20px;
+        &:hover {
+            color: black;
+            background: red; 
+        }
+    }
+}
+//Footer 
+footer {
+    background: #7D85DD;
+    min-height:100%;
+margin: 0 0 -70px;
+}
+.footer-container {
+    padding: 20px; 
+    margin: 0 auto;
+    text-align: center;
+}
+.footer-content {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+}
+.logo-footer{ 
+    max-width:100%;
+}
+.navigation, .contact, .publicity {
+    display: flex;
+    flex-direction: column; 
+        a {
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            padding: 5px; 
+            color: #FFFFFF;
+        }
+        i {
+            color: #FFFFFF; 
+        }
+}
+.social-networks i {
+    color: white; 
+    display: flex;
+    padding: 8px;  
+    flex-direction: column; 
+}
+h4 {
+font-family: 'Montserrat';
+font-weight: 500; 
+padding: 8px; 
+font-size: 24px;
+color: #FFFFFF;
+line-height: 29px;
+}
+//Burger menu
+.burger-menu {
+    width: 20px;
+    height: 20px; 
+    display: block;
+    cursor: pointer;  
+
+}
+span {
+    display: block; 
+    width: 20px;
+    cursor: pointer;  
+    position: relative; 
+    height:1px;
+    background:#7D85DD;
+    &::before {
+        content:''; 
+         position: absolute; 
+         display: block;  
+         top: 5px;  
+         width: 20px; 
+         height:1px;
+         background:#7D85DD; 
+    }
+    &::after {
+        content:''; 
+         position: absolute; 
+         display: block;  
+         top: -5px;  
+         width: 20px;
+         height:1px;
+         background:#7D85DD; 
+    }
+}
+
+.burger-menu-link {
+    
+}
+// Media queries
+@media screen and (max-width: 1450px) {
+.main-container img {
+    width: 40%;
+}
+.phones svg {
+    width: 80%; 
+}
+.image img {
+    max-width: 100%;  
+}
+}
+@media screen and (max-width: 1100px) {
+    .image img {
+        display: none; 
+    }
+}
+@media screen and (max-width: 900px) {
+    .column {
+        padding: 0px 30px; 
+        max-width: 200px; 
+    }
+    
+    .where-content img{
+        width:50%; 
+    }
+    .phones svg {
+        display: none;
+    }
+    .app-text h2 {
+        text-align: center;
+    }
+    .app-text-app img {
+        padding: 20px;   
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        text-align: center; 
+        align-items: center; 
+        padding: 30px; 
+    }
+    .sendnum {
+        height: 100%;
+        background-size: cover;
+    }    
+}
+@media screen and (max-width: 800px) {
+    .footer-content {
+        display: flex;
+        flex-direction:column;
+    }
+    .social-networks i {
+        display: inline-flex;
+    }
+}
+@media screen and (max-width: 700px) {
+.logo img {
+    max-width:50%; 
+}
+.logo-footer img  {
+    max-width:80%;
+}
+.menu-link a { 
+    font-size: 10px;
+}
+button {
+    font-size: 10px; 
+}
+
+.main-container {
+    margin: 0 auto; 
+}
+.main-text .title { 
+    font-size: 55px; 
+    line-height:70px;  
+}
+.columns { 
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;  
+    text-align: center; 
+}
+.column {  
+    margin: 0 auto; 
+    text-align: center;  
+}
+.where-content img{
+    display: none;  
+}
+.button {
+    display: none;
+}
+.menu {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh; 
+    
+background: #E5E7F8;
+    .menu-list {
+        display: block; 
+        margin-top: 150px; 
+    }
+    a {
+        color: #18191F; 
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 50px;
+    }
+}
+} 
+@media screen and (max-width:650px) {
+    .app-text-app img {
+        width: 40%; 
+    }
+}
+@media screen and (max-width:500px) {
+    .logo {
+        display: none; 
+    }
+    .main-container img {
+        display: none; 
+    }
+    .title h1 {
+        font-size: 45px; 
+    }
+    h2 {
+        font-size:35px; 
+    }
+    form {
+        display: flex;
+        flex-direction: column; 
+        input {
+            padding: 20px;
+            margin: 15px; 
+        } 
+        button {
+            padding: 20px; 
+             
+        }
+    }
+}
